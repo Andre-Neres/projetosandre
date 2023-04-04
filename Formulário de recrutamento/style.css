@@ -1,0 +1,173 @@
+
+.cabecalho {
+  background-color:rgb(14, 105, 18);
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.cabecalho h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.cabecalho p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+
+
+body {
+font-family: Arial, sans-serif;
+background-color: whitesmoke;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+
+/* Define o estilo do parágrafo de introdução */
+p {
+font-size: 18px;
+color: white;
+text-align: center;
+margin-top: 20px;
+}
+
+/* Define o estilo do formulário */
+form {
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Define o estilo dos campos do formulário */
+label {
+display: block;
+font-size: 16px;
+font-weight: bold;
+color: #333;
+margin-top: 20px;
+}
+
+/* Define o estilo da região de informações pessoais */
+.personal-info {
+border-bottom: 2px solid #7B2CBF;
+margin-bottom: 20px;
+}
+
+.personal-info label {
+color: #7B2CBF;
+}
+
+/* Define o estilo da região de informações de contato */
+.contact-info {
+border-bottom: 2px solid #7B2CBF;
+margin-bottom: 20px;
+}
+
+.contact-info label {
+color: #7B2CBF;
+}
+
+/* Define o estilo da região de informações de mensagem */
+.message-info {
+margin-bottom: 20px;
+}
+
+.message-info label {
+color: #7B2CBF;
+}
+
+/* Define o estilo dos campos do formulário */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+width: 100%;
+padding: 10px;
+font-size: 16px;
+color: #333;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+margin-top: 5px;
+}
+
+/* Define o estilo dos botões de rádio e caixas de seleção */
+label input[type="radio"],
+label input[type="checkbox"] {
+margin-right: 10px;
+margin-top: 5px;
+}
+
+/* Define o estilo do botão de envio */
+input[type="submit"] {
+background-color: #7B2CBF;
+color: #fff;
+font-size: 16px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 20px;
+}
+
+/* Define o estilo do campo de seleção */
+select {
+height: 40px;
+}
+
+/* Define o estilo do campo de texto grande */
+textarea {
+resize: none;
+}
+
+/* Define o estilo do campo de aviso de erro */
+input:invalid,
+select:invalid,
+textarea:invalid {
+border-color: red;
+}
+
+/* Define o estilo da mensagem de erro */
+input:invalid + span,
+select:invalid + span,
+textarea:invalid + span {
+color: red;
+font-size: 14px;
+font-weight: bold;
+}
+#enviar-dados, #limpar-dados {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  padding-top: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3adfa8ef; /* cor verde */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#enviar-dados:hover, #limpar-dados:hover {
+  background-color: #1c9181; /* cor verde mais escura ao passar o mouse */
+}
+
+#limpar-dados {
+  margin-left: 10px;
+  background-color: #f44336; /* cor vermelha */
+}
+
+#limpar-dados:hover {
+  background-color: #d33f2f; /* cor vermelha mais escura ao passar o mouse */
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Recrutamento</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header class="cabecalho">
+  <h1>Formulário de Recrutamento</h1>
+  <p>As informações fornecidas neste formulário serão usadas exclusivamente para fins de recrutamento e seleção. Todos os campos são obrigatórios, exceto onde indicado o contrário.</p>
+</header>
+
+  <form id="recrutamento-form">
+
+      <h3><legend>Dados Pessoais</legend></h3>
+      <label for="nomeCompleto">Nome Completo:</label>
+      <input type="text" id="nomeCompleto" required>
+      <br>
+      <label for="dataNascimento">Data de Nascimento:</label>
+      <input type="date" id="dataNascimento" required >
+      <br>
+      <label>Gênero:</label>
+      <label for="genero-masculino"><input type="radio" id="genero-masculino" name="genero" value="masculino" required > Masculino</label>
+      <label for="genero-feminino"><input type="radio" id="genero-feminino" name="genero" value="feminino" required> Feminino</label>
+      <label for="genero-outros"><input type="radio" id="genero-outros" name="genero" value="outros" required> Outros</label>
+      <label for="nacionalidade">Nacionalidade:</label>
+      <input type="text" id="nacionalidade" required >
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" required>
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" required>
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado"required>
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep"required >
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" required>
+
+
+    <h3>  <legend>Formação Acadêmica</legend> </h3>
+      <label for="formacao">Selecione a sua formação:</label>
+      <select id="formacao"required>
+        <option value="">-- Selecione uma opção --</option>
+        <option value="tecnico-informatica">Técnico em Informática</option>
+        <option value="tecnologo-ad">Tecnólogo em Análise e Desenvolvimento de Sistemas</option>
+      </select>
+      <label for="outrosCursos">Além da formação técnica profissional ofertada no IFTO, já possui algum outro tipo de curso ? Se sim, qual ?</label>
+      <textarea id="outrosCursos" rows="5"></textarea>
+   
+
+    <h3><legend>Experiências Profissionais</legend> </h3>
+    <div>
+      <label for="empresaAtual">Última ou Atual Empresa:</label>
+      <input type="text" id="empresaAtual" name="empresa-atual">
+    </div>
+    <div>
+      <label for="cargo">Cargo:</label>
+      <input type="text" id="cargo" name="cargo">
+    </div>
+    <div>
+      <label for="periodo">Período de Atuação (Mês/Ano – Mês/Ano):</label>
+      <input type="text" id="periodo" name="periodo">
+    </div>
+    <div>
+      <label for="atividades">Principais Atividades e Responsabilidades:</label>
+      <textarea id="atividades" name="atividades"></textarea>
+    </div>
+    <hr>
+    <div>
+      <label for="outrasExperiencias">Se você possui mais experiências profissionais, liste-as abaixo (opcional):</label>
+      <textarea id="outrasExperiencias" name="outras-experiencias"></textarea>
+    </div>
+    <hr>
+    <div>
+      <label for="experienciasAdicionais">Experiências Adicionais (Empresa, Cargo, Período, Atividades e Responsabilidades):</label>
+      <textarea id="experienciasAdicionais" name="experiencias-adicionais"></textarea>
+    </div>
+ 
+
+      <h3><legend>Habilidades Técnicas e Idiomas</legend></h3>
+    <div>
+      <label for="habilidades">Informe quais Habilidades Técnicas Relevantes (softwares, ferramentas, certificações):</label>
+      <textarea id="habilidades" name="habilidades"></textarea>
+    </div>
+    <div>
+      <label for="idiomas">Possui habilidades com idiomas ? Qual Língua:</label>
+      <input type="text" id="idiomas" name="idiomas">
+    </div>
+    <div>
+      <label for="nivel-idiomas">Nível de Proficiência (Básico, Intermediário, Avançado, Fluente):</label>
+      <input type="text" id="nivel-idiomas" name="nivel-idiomas">
+    </div>
+  </>
+
+
+    <h3><legend>Habilidades Comportamentais</legend></h3>
+    <div>
+      <label for="hab-comportamentais">Liste três habilidades comportamentais que você considera serem suas principais qualidades profissionais:</label>
+      <textarea id="hab-comportamentais" name="hab-comportamentais"></textarea>
+    </div>
+  </>
+
+
+    <h3><legend>Informações Adicionais</legend></h3>
+    <div>
+      <label for="pretensao-salarial">Pretensão Salarial:</label>
+      <input type="text" id="pretensao-salarial" name="pretensao-salarial">
+    </div>
+    <div>
+      <label for="disponibilidade">Disponibilidade para Início:</label>
+      <input type="text" id="disponibilidade" name="disponibilidade">
+    </div>
+
+
+    <button type="submit" id="enviar-dados">Enviar</button>
+    <button type="button" id="limpar-dados">Limpar</button>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="jquery-3.6.4.min.js"></script>
+</body>
+</html>
